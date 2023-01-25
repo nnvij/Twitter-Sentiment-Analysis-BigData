@@ -48,10 +48,12 @@
 - Sentiment column is the label. 0 > negative sentiment, 1> positive sentiment
 - We tried RandomforestClassifier and Logisticregression models to classify if the tweet in the test data is positive or negative
 - With RandomForestClassifer we acheived 66% accuracy and 72.87% Roc-Auc score
-- Classification report for RandomForestClassifer as follows
+- Classification report for RandomForestClassifer as follows:
   ![image](https://user-images.githubusercontent.com/103464406/214699709-55a6af80-122c-43f2-b8fb-a2f1380b2d20.png)
 - LogisticRegression gave us an accuracy score of 90.425 and Roc-Auc score of 92.83
 - Classification report for LogisticRegression as follows:
     ![image](https://user-images.githubusercontent.com/103464406/214700094-46d76a87-3711-4069-92b8-0b03f28bf70e.png)
 
-- 
+#### Predictions from our LogisticRegresssion model is saved back to AWS S3 bucket
+
+## QuickSight Dashboard

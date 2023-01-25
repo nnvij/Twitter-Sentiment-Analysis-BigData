@@ -29,3 +29,5 @@
   ![image](https://user-images.githubusercontent.com/103464406/214684035-bba678e9-b194-4f0f-8267-7badd78e42d7.png).
 - Textblob which is a library in python for text analysis can be used to assign sentiment for each tweet. 
 - Create a  column Sentiment which will have values 0 if a tweet has nagative sentiment and 1 for positive sentiment.
+
+## Model De

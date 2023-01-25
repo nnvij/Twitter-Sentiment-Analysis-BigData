@@ -57,5 +57,11 @@
 #### LogisticRegresssion model gave us better accuracy, the predictions are saved back to AWS S3 bucket
 
 ## QuickSight Dashboard
-[Quicksight_cleantweets.pdf](https://github.com/nnvij/Twitter-Sentiment-Analysis--BigData/files/10504051/Quicksight_cleantweets.pdf)
+### Tweets post data preprocessing:
+  ![image](https://user-images.githubusercontent.com/103464406/214701168-8bf81ce5-3b17-429f-850a-f0d23c38ace7.png)
+  ![image](https://user-images.githubusercontent.com/103464406/214701250-3d46aa48-c45e-469a-9fd1-84b292999de4.png)
+
+
+### Predictions
+  ![image](https://user-images.githubusercontent.com/103464406/214701322-038c7012-76af-4a82-a20f-a527059312d3.png)
 

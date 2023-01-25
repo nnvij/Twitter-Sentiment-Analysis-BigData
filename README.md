@@ -7,7 +7,7 @@
 
 ## Problem Statement:
 - Collect tweets using Twitter Api by launching an AWS EC2 instance, stream the tweets using Kinesis firehose and store the data in AWS S3 bucket.
-- Built a classification model to classify sentiment of each tweet.
+- Built a binary classification model to classify sentiment of each tweet (positive or negative) .
 - Build a Quicksight dashboard for the data collected and also predictions from the classification model.
 
 ### Tools used:
@@ -22,8 +22,10 @@
 
 
 ### Data preprocessing:
-- Creating pyspark dataframe object twitter data
-- Check for null values and dropping rows with Null values
-- Convert create_at to datetime column
-- Using regular expression to clean the tweet, location columns 
-  ![image](https://user-images.githubusercontent.com/103464406/214684035-bba678e9-b194-4f0f-8267-7badd78e42d7.png)
+- Creating pyspark dataframe object twitter data.
+- Check for null values and dropping rows with Null values.
+- Convert create_at to datetime column.
+- Using regular expression to clean the tweet, location columns. 
+  ![image](https://user-images.githubusercontent.com/103464406/214684035-bba678e9-b194-4f0f-8267-7badd78e42d7.png).
+- Textblob which is a library in python for text analysis can be used to assign sentiment for each tweet. 
+- Create a  column Sentiment which will have values 0 if a tweet has nagative sentiment and 1 for positive sentiment.

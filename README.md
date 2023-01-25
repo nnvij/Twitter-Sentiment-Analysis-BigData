@@ -17,10 +17,13 @@
 ### Data Collection:
 - 399333 tweets were collected using twitter Api and stored in AWS S3
 - using Databricks environment connect to S3 bucket and mount the data by creating a spark session.
-- ![image](https://user-images.githubusercontent.com/103464406/214683406-cce6feab-4d1a-4836-8726-f1199e3c15d9.png)
-![image](https://user-images.githubusercontent.com/103464406/214683454-b3111e40-311e-4450-900a-d62c8a7671c9.png)
+  ![image](https://user-images.githubusercontent.com/103464406/214683406-cce6feab-4d1a-4836-8726-f1199e3c15d9.png)
+  ![image](https://user-images.githubusercontent.com/103464406/214683454-b3111e40-311e-4450-900a-d62c8a7671c9.png)
 
 
 ### Data preprocessing:
 - Creating pyspark dataframe object twitter data
-- Drop Null values 
+- Check for null values and dropping rows with Null values
+- Convert create_at to datetime column
+- Using regular expression to clean the tweet, location columns 
+  ![image](https://user-images.githubusercontent.com/103464406/214684035-bba678e9-b194-4f0f-8267-7badd78e42d7.png)

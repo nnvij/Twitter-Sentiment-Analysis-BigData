@@ -36,4 +36,5 @@
 - Using library Tokenizer convert tweet column to lowercase and split it by white spaces, outputColumn="tokens"
 - Remove stopwords from tokens using library StopWordsRemover,outputColumn="filtered" .
 - Convert filtered tweets into matrix of token counts using CountVectorizer library,outputColumn="cv" .
-- Inverse document frequency (IDF)
+- Inverse document frequency (IDF) library will check for relevant words in the tweet and remove sparse words, outputcolumn = "1gram_idf".
+- Ngram (n=2) library is feature transformer that converts the input array of strings into an array of n-grams. outputcolumn= "2gram"

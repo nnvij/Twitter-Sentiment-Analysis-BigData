@@ -54,6 +54,8 @@
 - Classification report for LogisticRegression as follows:
     ![image](https://user-images.githubusercontent.com/103464406/214700094-46d76a87-3711-4069-92b8-0b03f28bf70e.png)
 
-#### Predictions from our LogisticRegresssion model is saved back to AWS S3 bucket
+#### LogisticRegresssion model gave us better accuracy, the predictions are saved back to AWS S3 bucket
 
 ## QuickSight Dashboard
+[Quicksight_cleantweets.pdf](https://github.com/nnvij/Twitter-Sentiment-Analysis--BigData/files/10504051/Quicksight_cleantweets.pdf)
+

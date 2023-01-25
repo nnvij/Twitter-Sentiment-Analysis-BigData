@@ -31,7 +31,7 @@
 - Create a  column Sentiment which will have values 0 if a tweet has nagative sentiment and 1 for positive sentiment.
 - After cleaning we have 135,083 tweets out of which 45,760 were tweets with positive sentiment and 89,323 were tweets with negative sentiment.
 
-## Model Development:
+## Model:
 ### Feature Engineering:
 - Using library Tokenizer convert tweet column to lowercase and split it by white spaces, outputColumn="tokens"
 - Remove stopwords from tokens using library StopWordsRemover,outputColumn="filtered" .
@@ -42,3 +42,16 @@
 - Again perform IDf to remove sparse terms, outputColumn="2gram_idf"
 - VectorAssembler will  merges "1gram_idf", "2gram_tf" columns into a vector column rawFeatures
 - ChiSqSelector will select  categorical features from rawFeatures, outputCol="features" and reduce the number of features to 16000
+
+### Model Development and Evaluation:
+- Data was split into 90% train and 10% test data.
+- Sentiment column is the label. 0 > negative sentiment, 1> positive sentiment
+- We tried RandomforestClassifier and Logisticregression models to classify if the tweet in the test data is positive or negative
+- With randomForestClassifer we acheived 66% accuracy and 72.87% Roc-Auc score
+- Classifcation report as follows
+  ![image](https://user-images.githubusercontent.com/103464406/214699709-55a6af80-122c-43f2-b8fb-a2f1380b2d20.png)
+- LogisticRegression gave us an accuracy score of 90.425 and Roc-Auc score of 92.83
+- Classification report for LogisticRegression as follows:
+    ![image](https://user-images.githubusercontent.com/103464406/214700094-46d76a87-3711-4069-92b8-0b03f28bf70e.png)
+
+- 

@@ -37,4 +37,8 @@
 - Remove stopwords from tokens using library StopWordsRemover,outputColumn="filtered" .
 - Convert filtered tweets into matrix of token counts using CountVectorizer library,outputColumn="cv" .
 - Inverse document frequency (IDF) library will check for relevant words in the tweet and remove sparse words, outputcolumn = "1gram_idf".
-- Ngram (n=2) library is feature transformer that converts the input array of strings into an array of n-grams. outputcolumn= "2gram"
+- Ngram (n=2) library is feature transformer that converts the input array of strings into an array of n-grams, outputcolumn= "2gram".
+- HashingTF will map a sequence of terms to their term frequencies using the hashing trick, numFeatures=20000,outputcolumn= "2gram_tf".
+- Again perform IDf to remove sparse terms, outputColumn="2gram_idf"
+- VectorAssembler will  merges "1gram_idf", "2gram_tf" columns into a vector column rawFeatures
+- ChiSqSelector will select  categorical features from rawFeatures, outputCol="features" and reduce the number of features to 16000

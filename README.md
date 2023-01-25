@@ -58,10 +58,13 @@
 
 ## QuickSight Dashboard
 ### Tweets post data preprocessing:
+ - 66% of the tweets were with negative sentiment
+ - Top 10 location in terms of number of tweet, location as a feature doesnot seem to be a contributor in tweet sentiment as they almost have equal percentage of both negative and positive tweets
   ![image](https://user-images.githubusercontent.com/103464406/214701168-8bf81ce5-3b17-429f-850a-f0d23c38ace7.png)
   ![image](https://user-images.githubusercontent.com/103464406/214701250-3d46aa48-c45e-469a-9fd1-84b292999de4.png)
 
 
-### Predictions
+### Predictions:
+- from the 8.9K negative tweets, the model was able to correctly predict 8.19K tweets as tweets with negative sentiment.
   ![image](https://user-images.githubusercontent.com/103464406/214701322-038c7012-76af-4a82-a20f-a527059312d3.png)
 

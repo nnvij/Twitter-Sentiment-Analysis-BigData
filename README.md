@@ -67,4 +67,5 @@
 ### Predictions:
 - from the 8.9K negative tweets, the model was able to correctly predict 8.19K tweets as tweets with negative sentiment.
   ![image](https://user-images.githubusercontent.com/103464406/214701322-038c7012-76af-4a82-a20f-a527059312d3.png)
+  
 
